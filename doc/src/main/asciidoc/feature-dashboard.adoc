@@ -1,0 +1,88 @@
+== Dashboard feature
+
+Add a common dashboard layout that will be shared by page modules.
+
+A page module may be set as the default (eg. home page), although this can be edited easily.
+
+All other page modules will use lazy loading.
+
+=== Create CoreModule
+
+Create a core module that will handle the display of SidebarComponent and NavbarComponent.
+
+Note that the Angular 2 module tutorial states the following, even though the example declared the TitleComponent.
+
+"Ideally they consist entirely of providers and have no declarations. The CoreModule and Angular's HttpModule are good examples."
+
+From the src/app directory:
+
+[source,bash]
+----
+ng g m core
+cd core
+ng g c sidebar --flat
+ng g c navbar --flat
+----
+
+=== Create SharedModule
+
+Created a shared module that may be used to provide common functionality to feature modules.
+
+The SharedModule will provide modules such as the FormsModule and HttpModule, as per the Angular 2 module tutorial.
+
+From the src/app directory:
+
+[source,bash]
+----
+ng g m shared
+----
+
+Move the FormsModule and HttpModule from app.module.ts to shared.module.ts
+
+To view the empty dashboard layout run:
+
+[source,bash]
+----
+ng serve
+----
+
+=== Create page modules and add routing
+
+From the src/app directory:
+
+[source,bash]
+----
+touch app-routing.module.ts
+----
+
+Create the base directory for all feature modules:
+
+[source,bash]
+----
+mkdir modules
+cd modules
+----
+
+Create the HomeModule and an initial component:
+
+[source,bash]
+----
+ng g m home
+ng g c home --flat
+touch home-routing.module.ts
+----
+
+Create the LazyModule and an initial component:
+
+[source,bash]
+----
+ng g m lazy
+ng g c lazy --flat
+touch lazy-routing.module.ts
+----
+
+=== References
+
+https://angular.io/docs/ts/latest/guide/ngmodule.html
+
+http://v4-alpha.getbootstrap.com/examples/dashboard/#

@@ -49,6 +49,7 @@
                             <backend>html</backend>
                             <doctype>article</doctype>
                             <attributes>
+                                <project-version>${project.version}</project-version>
                                 <docinfo>true</docinfo>
                                 <allow-uri-read>true</allow-uri-read>
                             </attributes>
