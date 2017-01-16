@@ -1,5 +1,12 @@
-<p>
-  <ngb-alert [dismissible]="false">
-    {{title}} with ng-bootstrap
-  </ngb-alert>
-</p>
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="row">
+
+    <app-sidebar></app-sidebar>
+
+    <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+      <router-outlet></router-outlet>
+    </main>
+
+  </div>
+</div>
