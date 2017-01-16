@@ -32,6 +32,7 @@ endif::[]
 include::project-intro.adoc[]
 include::project-setup.adoc[]
 include::config-bootstrap.adoc[]
+include::feature-dashboard.adoc[]
 include::documentation.adoc[]
 
 // ============================================================================
