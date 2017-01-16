@@ -26,7 +26,7 @@ You can verify the installation by checking the 'dependencies' section of link:.
 Amend app.module.ts as follows:
 
 .app.module.ts
-[source,json,indent=0]
+[source,typescript,indent=0]
 ----
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';

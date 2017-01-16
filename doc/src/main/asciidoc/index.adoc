@@ -1,3 +1,4 @@
+// http://asciidoctor.org/docs/user-manual
 = Angular 2 Example Documentation
 Jase <https://github.com/jaseb/angular2-example>
 v1.0.0, 2017-01-14
@@ -19,11 +20,12 @@ ifndef::env-github[]
 :idprefix:
 :idseparator: -
 endif::[]
-//:source-highlighter: prettify
+// See http://asciidoctor.org/docs/user-manual/#highlight-js
+// Custom pack used to support additional languages
 :source-highlighter: highlightjs
+:highlightjsdir: highlight
 // Preview available themes at https://highlightjs.org/static/demo/
 :highlightjs-theme: monokai
-
 
 // ============================================================================
 

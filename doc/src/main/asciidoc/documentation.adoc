@@ -2,6 +2,8 @@
 
 The project uses http://asciidoctor.org/docs/what-is-asciidoc/[Asciidoc].
 
+http://asciidoctor.org/docs/user-manual/#highlight-js[User Guide]
+
 Generation scripts are from the Spring Boot project, and are used to create README.adoc and HTML 5 documentation.
 
 https://pages.github.com[GitHub Pages] integration is not covered in this example.
