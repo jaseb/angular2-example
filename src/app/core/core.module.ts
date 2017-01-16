@@ -2,13 +2,15 @@ import { NgModule, ModuleWithProviders, SkipSelf, Optional } from '@angular/core
 import { CommonModule } from '@angular/common';
 import { SidebarComponent } from './sidebar.component';
 import { NavbarComponent } from './navbar.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule // Required for routerLink in SidebarComponent
   ],
   declarations: [ SidebarComponent, NavbarComponent ],
-  exports: [ NavbarComponent, SidebarComponent]
+  exports: [ NavbarComponent, SidebarComponent ]
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
