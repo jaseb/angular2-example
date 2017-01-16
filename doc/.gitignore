@@ -1,0 +1,25 @@
+################################################################################
+# System files
+.DS_Store
+*~
+*.swp
+
+################################################################################
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+
+#IntelliJ
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Angular ###
+node_modules
+# Don't commit the 'ng build' output
+src/main/resources/static/
