@@ -1,0 +1,34 @@
+= Angular 2 Example Documentation
+Jase <https://github.com/jaseb/angular2-example>
+v1.0.0, 2017-01-14
+:description: Angular 2 Example - Documentation.
+:keywords: Angular, Angular 2, angular-cli, Spring Boot, spring, spring-boot
+:imagesdir: images
+:experimental:
+:toc:
+:toc-placement: left
+:toc-title: pass:[<b>Table of Contents</b>]
+:nofooter:
+:outfilesuffix-old: {outfilesuffix}
+// ifdef::env-github,env-browser[:outfilesuffix: .adoc]
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:tip-caption: :bulb:
+endif::[]
+ifndef::env-github[]
+:idprefix:
+:idseparator: -
+endif::[]
+//:source-highlighter: prettify
+:source-highlighter: highlightjs
+// Preview available themes at https://highlightjs.org/static/demo/
+:highlightjs-theme: monokai
+
+
+// ============================================================================
+
+include::project-intro.adoc[]
+include::project-setup.adoc[]
+include::documentation.adoc[]
+
+// ============================================================================

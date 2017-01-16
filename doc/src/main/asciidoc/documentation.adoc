@@ -1,0 +1,24 @@
+== Asciidoc setup and usage
+
+The project uses http://asciidoctor.org/docs/what-is-asciidoc/[Asciidoc].
+
+Generation scripts are from the Spring Boot project, and are used to create README.adoc and HTML 5 documentation.
+
+https://pages.github.com[GitHub Pages] integration is not covered in this example.
+
+To generate documentation run the following from the 'docs' directory:
+
+[source,bash]
+----
+mvn clean install
+----
+
+This will generate HTML in the 'target' directory, and update the project README.adoc
+
+
+Links:
+
+http://asciidoctor.org/docs/asciidoctor-maven-plugin[asciidoctor-maven-plugin]
+
+https://github.com/spring-projects/spring-boot/tree/master/spring-boot-docs
+

@@ -1,0 +1,12 @@
+[abstract]
+== Overview
+
+An example Angular 2 app using angular-cli and Spring Boot.
+
+For more information about these projects, see the links below:
+
+* https://angular.io[Angular 2] (https://cli.angular.io[angular-cli])
+* https://v4-alpha.getbootstrap.com[Bootstrap 4]
+* https://ng-bootstrap.github.io/#/home[ng-bootstrap]
+* https://projects.spring.io/spring-boot/[Spring Boot]
+
