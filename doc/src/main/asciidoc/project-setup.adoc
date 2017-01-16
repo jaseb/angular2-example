@@ -119,20 +119,25 @@ The Angular 2 'dist' directory will be amended to use the default Spring locatio
 
 The enables us to develop the front-end using the default 'ng serve', and deploy the application using 'spring-boot:run'.
 
-Amend link:../angular-cli.json[angular-cli.json] and change the location of the 'dist' directory.
+Amend angular-cli.json and change the location of the 'dist' directory.
 
+.angular-cli.json
 [source,json]
 ----
+...
 "outDir": "src/main/resources/static/",
+...
 ----
 
 ==== Test the integration
 
 Run the following command to build the app and deploy using Spring.
 
-    ng build
-
-    mvn spring-boot:run
+[source,bash]
+----
+ng build
+mvn spring-boot:run
+----
 
 Open http://localhost:8080[http://localhost:8080]
 

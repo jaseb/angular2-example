@@ -1,0 +1,87 @@
+== Bootstrap configuration
+
+The ng-bootstrap project provides a set of Angular 2 directives to handle dynamic behaviour.
+This alleviates the need to import jQuery or Bootstrap javascript functionality.
+
+Links:
+
+https://v4-alpha.getbootstrap.com/getting-started/download/#package-managers
+
+https://ng-bootstrap.github.io/#/home
+
+=== Install dependencies
+
+[source,bash]
+----
+npm install --save bootstrap@4.0.0-alpha.6
+npm install --save @ng-bootstrap/ng-bootstrap
+----
+
+You can verify the installation by checking the 'dependencies' section of link:../package.json[package.json]
+
+=== Amend Angular configuration
+
+==== Step 1
+
+Amend app.module.ts as follows:
+
+.app.module.ts
+[source,json,indent=0]
+----
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; # <1>
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    NgbModule.forRoot()  # <2>
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+----
+<1> Import NgbModule
+<2> Declare NgbModule.forRoot()
+
+==== Step 2
+Amend angular-cli.json as follows:
+
+.angular-cli.json
+[source,json,indent=0]
+----
+...
+"styles": [
+  "../node_modules/bootstrap/dist/css/bootstrap.css", # <1>
+  "styles.scss"
+],
+...
+----
+<1> Add bootstrap.css
+
+=== Test with ng-bootstrap component
+
+Amend app.component.html as follows:
+
+.app.component.html
+[source,html]
+----
+<p>
+  <ngb-alert [dismissible]="false">
+    {{title}} with ng-bootstrap
+  </ngb-alert>
+</p>
+----
+
+Run 'ng serve' and browse to http://localhost:4200
+
