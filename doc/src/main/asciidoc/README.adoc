@@ -1,3 +1,6 @@
+== Documentation
+
+https://jaseb.github.io/angular2-example/
+
 include::project-intro.adoc[]
 
-Documentation: https://jaseb.github.io/angular2-example/
