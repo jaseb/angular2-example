@@ -1,10 +1,10 @@
-import { AePage } from './app.po';
+import { Angular2ExamplePage } from './app.po';
 
-describe('ae App', function() {
-  let page: AePage;
+describe('angular2-example App', function() {
+  let page: Angular2ExamplePage;
 
   beforeEach(() => {
-    page = new AePage();
+    page = new Angular2ExamplePage();
   });
 
   it('should display message saying app works', () => {
