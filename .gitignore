@@ -25,7 +25,3 @@ nbdist/
 ### Angular2 ###
 node_modules
 src/main/resources/static
-
-### GitHub Pages ###
-gh-pages/
-

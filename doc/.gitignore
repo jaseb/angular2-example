@@ -23,3 +23,6 @@ build/
 node_modules
 # Don't commit the 'ng build' output
 src/main/resources/static/
+
+### GitHub Pages ###
+gh-pages/
