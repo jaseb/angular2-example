@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="offset-md-1 col-md-10 col-xs-12 pt-4 pb-4 clearfix">
+    <a class="btn btn-success float-right" [routerLink]="['/message/new']">New Message</a>
+  </div>
+</div>
+<div class="row">
+  <div class="offset-md-1 col-md-10 col-xs-12">
+    <ul class="list-group">
+      <app-message-list-item [model]="model" *ngFor="let model of data; let i = index" [id]="i">
+      </app-message-list-item>
+    </ul>
+  </div>
+</div>

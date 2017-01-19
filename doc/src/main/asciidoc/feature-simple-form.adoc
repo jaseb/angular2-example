@@ -1,0 +1,42 @@
+== Message form feature
+
+@WIP
+
+Add a module, service and reactive form to allow for the creation and editing of messages.
+
+The message model will contain a list of attributes.
+
+
+NOTE: At the time of writing there was an issue with angular-cli, and the supplied version of zone.js@0.7.5 +
+      https://github.com/angular/angular-cli/issues/3975 +
+      http://stackoverflow.com/questions/41633287/angular2-cannot-set-property-stack-of-undefined +
+      +
+      Whilst the issues above suggest reverting the version to 0.7.4, the following also works: +
+      npm install --save zone.js@0.7.6
+
+=== Create the module, service and components
+
+Using angular-cli run the following commands:
+
+[source,bash]
+----
+# Create the module
+ng g m message && cd message
+# Create the message model, and the message attribute model
+ng g cl message
+ng g cl message-attribute
+# Create the service
+ng g s message
+# Finally, create the parent and CRUD components
+ng g c message --flat -is
+ng g c message-list --flat -is
+ng g c message-list-item --flat -is
+ng g c message-detail --flat -is
+ng g c message-edit --flat -is
+# Add routing
+touch message-routing.module.ts
+----
+
+==== Amend message.ts
+
+
